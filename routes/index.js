@@ -19,7 +19,7 @@ router.get('/', (req, res) => {
     })
 })
 
-router.get('/:id', (req, res) => {
+router.get('/things/:id', (req, res) => {
     // should really get the user data here and then fetch it thru, but let's try this asynchronously
     console.log('at the user route');
     console.log(req.params.id); //1, 2, 3, or whatever comes after the slash
