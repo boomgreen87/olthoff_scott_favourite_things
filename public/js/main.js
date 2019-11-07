@@ -23,7 +23,7 @@ const myVM = (() => {
         event.preventDefault();
 
         // 1, 2, or 3 depending on which a tag you click
-        let url = `/${this.getAttribute('href')}`;
+        let url = `/things/${this.getAttribute('href')}`;
 
         // This goes and fetches the database content (or an API endpoint) That's why it's called a fetch!
         fetch(url)
