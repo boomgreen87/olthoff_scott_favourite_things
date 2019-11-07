@@ -1,0 +1,51 @@
+// Styles title
+.title {
+    max-width: 700px;
+    margin: 20px;
+}
+
+// Positions favourite things
+.faveThings {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+// Styles things
+.thing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 350px;
+    padding: 20px;
+    background-color: $bgColour;
+    border: 3px solid $btnBorderColour;
+    border-radius: 5%;
+    margin: 10px;
+}
+
+// Sizes and positions images
+.thing img {
+    max-width: 300px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+// Styles See more
+.seeMore {
+    padding: 10px;
+    background-color: $btnBorderColour;
+    text-decoration: none;
+    color: $buttonTextColour;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    transition: 0.25s;
+}
+
+// Styles see more hover
+.seeMore:hover {
+    background-color: $buttonHover;
+}
