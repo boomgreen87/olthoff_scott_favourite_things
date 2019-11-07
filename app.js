@@ -1,16 +1,19 @@
-const express = require("express");
-const path = require("path");
+const express = require('express');
+const path = require('path');
+const hbs = require('hbs');
+
+// set the port
+const port = process.env.PORT || 3000;
 
 const app = express();
 
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, '/public')));
+app.set('view engine', 'hbs');
+app.set('views', path.join(__dirname, 'views'));
 
-const port = process.env.PORT || 3000;
-
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname + "/views/index.html"));
-})
+app.use('/', require('./routes/index'));
 
 app.listen(port, () => {
     console.log(`app is running on ${port}`);
 })
+

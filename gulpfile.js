@@ -21,9 +21,9 @@ function compile(done) {
 
 // Minify every image
 function squashImages(done) {
-    gulp.src('./images/**')
+    gulp.src('./public/images/**')
         .pipe(imagemin())
-        .pipe(gulp.dest('./dist/images'))
+        .pipe(gulp.dest('./public/dist/images'))
         done()
 }
 
