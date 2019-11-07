@@ -1,22 +1,14 @@
 <section id="faveThingsSection" class="section">
-    <h1 class="faveThingsTitle">
-        These are my favourite things!
-    </h1>
 
-    <h3>Click on one of my favourite things to learn more about them.</h3>
-
-    <div class="things">
+    <div class="faveThings">
         <!-- loop through all our team members and put their info on the page -->
         {{#each thing}} <!-- A for each loop -->
-        <div class="faveThings">
+        <div class="thing">
             <img src="images/{{Image}}" alt="Image of Favourite Thing" class="thingImage">
-            <a href="{{ID}}" class="link">
-                See More Info
-            </a>
-
             <h2>{{Title}}</h2>
             <h3>{{Role}}</h3>
-            <a href="{{Link}}">{{Link}}</a>
+            <a class="link" href="{{Link}}">{{Link}}</a>
+            <a href="{{ID}}" class="seeMore">See More</a>
         </div>
         {{/each}}
     </div>
