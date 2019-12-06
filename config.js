@@ -1,9 +1,9 @@
 const config = {
-    host: "localhost",
+    host: "us-cdbr-iron-east-05.cleardb.net",
     port: 3306, // 8889 for mac
-    uname: "root",
-    pword: "", // leave blank for windows
-    database: "db_favourite-things"
+    uname: "b368a2cf2c8457",
+    pword: "00c2eaea", // leave blank for windows
+    database: "heroku_9d5098fada17896"
 }
 
 module.exports = config;
